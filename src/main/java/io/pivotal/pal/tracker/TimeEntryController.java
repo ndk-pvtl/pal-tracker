@@ -27,7 +27,7 @@ public class TimeEntryController {
     }
 
     @PostMapping
-    public ResponseEntity<TimeEntry> crate(@RequestBody TimeEntry timeEntry) {
+    public ResponseEntity<TimeEntry> create(@RequestBody TimeEntry timeEntry) {
         TimeEntry createdTimeEntry = timeEntryRepository.create(timeEntry);
         actionCounter.increment();
         timeEntrySummary.record(timeEntryRepository.list().size());
