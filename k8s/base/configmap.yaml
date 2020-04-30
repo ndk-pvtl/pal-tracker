@@ -7,3 +7,5 @@ metadata:
 data:
   welcome.message: "hello from kubernetes"
   spring.datasource.hikari.maximumpoolsize: "1"
+  management.endpoints.web.exposure.include: "*"
+  management.endpoint.health.showdetails: "always"
