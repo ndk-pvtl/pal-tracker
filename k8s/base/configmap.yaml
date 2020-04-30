@@ -6,3 +6,4 @@ metadata:
     app: pal-tracker
 data:
   welcome.message: "hello from kubernetes"
+  spring.datasource.hikari.maximumpoolsize: "1"
